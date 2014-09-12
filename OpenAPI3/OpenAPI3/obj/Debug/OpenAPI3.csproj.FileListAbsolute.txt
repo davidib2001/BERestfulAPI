@@ -1,0 +1,142 @@
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll.config
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\OpenAPI3.pdb
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Antlr3.Runtime.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Microsoft.Web.Infrastructure.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Newtonsoft.Json.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Helpers.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Mvc.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Optimization.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Razor.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Deployment.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Razor.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\WebGrease.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Helpers.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Mvc.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Optimization.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Razor.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Deployment.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Razor.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Antlr3.Runtime.pdb
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Newtonsoft.Json.xml
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.dll
+c:\users\david.brown\documents\visual studio 2013\Projects\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Net.Http.Formatting.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Http.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Http.WebHost.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Net.Http.Formatting.xml
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Http.xml
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\System.Web.Http.WebHost.xml
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Domain.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Domain.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\RestfulDomain.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\RestfulDomain.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\APIDefinitions.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\OpenAPIToServiceBus.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\OpenAPIToServiceBus.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Bondedge.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\EasyNetQ.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\RabbitMQ.Client.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\Bondedge.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\EasyNetQ.xml
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\OpenAPI3\OpenAPI3\bin\RabbitMQ.Client.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\OpenAPI3.dll.config
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\OpenAPI3.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\OpenAPI3.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Antlr3.Runtime.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\APIDefinitions.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Bondedge.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Domain.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Microsoft.Practices.Unity.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Newtonsoft.Json.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\OpenAPIToServiceBus.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Net.Http.Formatting.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Helpers.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Http.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Http.WebHost.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Mvc.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Optimization.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Razor.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.Deployment.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.Razor.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Unity.WebApi.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\WebGrease.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\EasyNetQ.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\RabbitMQ.Client.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Bondedge.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Domain.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Microsoft.Practices.Unity.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Newtonsoft.Json.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\OpenAPIToServiceBus.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Net.Http.Formatting.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Helpers.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Http.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Http.WebHost.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Mvc.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Razor.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.Deployment.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.WebPages.Razor.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\System.Web.Optimization.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\Antlr3.Runtime.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\EasyNetQ.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\bin\RabbitMQ.Client.xml
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.dll
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.pdb
+C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.csprojResolveAssemblyReference.cache
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll.config
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Antlr3.Runtime.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\APIDefinitions.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Bondedge.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Domain.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Microsoft.Practices.Unity.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Microsoft.Web.Infrastructure.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Newtonsoft.Json.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPIToServiceBus.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\RestfulDomain.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Net.Http.Formatting.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Helpers.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Http.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Http.WebHost.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Mvc.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Optimization.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Razor.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Deployment.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Razor.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Unity.WebApi.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\WebGrease.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\EasyNetQ.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\RabbitMQ.Client.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Bondedge.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Domain.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Microsoft.Practices.Unity.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Newtonsoft.Json.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPIToServiceBus.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\RestfulDomain.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Net.Http.Formatting.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Helpers.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Http.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Http.WebHost.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Mvc.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Razor.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Deployment.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.WebPages.Razor.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Optimization.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Antlr3.Runtime.pdb
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\EasyNetQ.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\RabbitMQ.Client.xml
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.csprojResolveAssemblyReference.cache
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.dll
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.pdb

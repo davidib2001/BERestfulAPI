@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulDomain", "RestfulDomain\RestfulDomain.csproj", "{35435E12-AD6C-4421-8D33-1EDADCA8BF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\..\..\..\..\..\BEOA\Domain\Domain.csproj", "{71074ADD-9591-42A3-9669-BD49AF08FA50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35435E12-AD6C-4421-8D33-1EDADCA8BF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35435E12-AD6C-4421-8D33-1EDADCA8BF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35435E12-AD6C-4421-8D33-1EDADCA8BF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35435E12-AD6C-4421-8D33-1EDADCA8BF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71074ADD-9591-42A3-9669-BD49AF08FA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71074ADD-9591-42A3-9669-BD49AF08FA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71074ADD-9591-42A3-9669-BD49AF08FA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71074ADD-9591-42A3-9669-BD49AF08FA50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

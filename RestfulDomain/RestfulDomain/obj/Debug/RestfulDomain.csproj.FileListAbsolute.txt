@@ -1,0 +1,14 @@
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\bin\Debug\Domain.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\bin\Debug\Domain.pdb
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.dll
+C:\Users\david.brown\Documents\Visual Studio 2013\Projects\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.pdb
+C:\Users\david.brown\documents\visual studio 2013\Projects\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.csprojResolveAssemblyReference.cache
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.dll
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.pdb
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\bin\Debug\Domain.dll
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\bin\Debug\Domain.pdb
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.csprojResolveAssemblyReference.cache
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.dll
+C:\BERestfulAPI\RestfulDomain\RestfulDomain\obj\Debug\RestfulDomain.pdb
