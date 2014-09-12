@@ -90,6 +90,7 @@ C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\
 C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.dll
 C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.pdb
 C:\Users\david.brown\Documents\1BACKUP\OpenAPI3_20140912_right_b4+I_added_unity\OpenAPI3\obj\Debug\OpenAPI3.csprojResolveAssemblyReference.cache
+C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.csprojResolveAssemblyReference.cache
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll.config
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.dll
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\OpenAPI3.pdb
@@ -137,6 +138,5 @@ C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\System.Web.Optimization.xml
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\Antlr3.Runtime.pdb
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\EasyNetQ.xml
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\bin\RabbitMQ.Client.xml
-C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.csprojResolveAssemblyReference.cache
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.dll
 C:\BERestfulAPI\OpenAPI3\OpenAPI3\obj\Debug\OpenAPI3.pdb

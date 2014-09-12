@@ -66,9 +66,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\BEOA\OpenAPIToServiceBus\OpenAPIToServiceBus\bin\Debug\OpenAPIToServiceBus.dll</HintPath>
     </Reference>
-    <Reference Include="RestfulDomain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.dll</HintPath>
+    <Reference Include="RestfulDomain">
+      <HintPath>..\..\..\BEOA\RestfulDomain\RestfulDomain\bin\Debug\RestfulDomain.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
