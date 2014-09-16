@@ -24,7 +24,7 @@ public class TaskManager : ITaskManager
         emReplyMessage = null;
         //access to the message bus, of course parms grabbed from .config or data store
         enterpriseMessageBusInterface2 = new Bondedge.API("bondedge1", "openapi", "password");
-        enterpriseMessageBusInterface2.RegisterClient("Kirk"/*srp.GetUser()*/, Callback);
+        enterpriseMessageBusInterface2.RegisterClient("Kyu"/*srp.GetUser()*/, Callback);
         
 
         //tranlsate client message to message bus message
@@ -32,7 +32,7 @@ public class TaskManager : ITaskManager
         Domain.IRequest domainRequestMessage = OpenAPIToServiceBus.MessageTranslators.simpleToEnterpriseMessage(srp.Securities[0].Identifier, (int)srp.Securities[0].AsOfDate, 1.0);
         //<todo> move these into the message translator and setting igor is obviously a no no 
         //<todo> add this into the message translator, here right now for testing <20140904>
-        domainRequestMessage.SetUser("Kirk"/*srp.GetUser()*/);
+        domainRequestMessage.SetUser("Kyu"/*srp.GetUser()*/);
         domainRequestMessage.SetID(srp.ID != Guid.Empty ? srp.ID : Guid.NewGuid());
 
 
