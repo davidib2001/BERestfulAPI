@@ -8,6 +8,12 @@ using System.Web.Routing;
 using System.Web.Http;
 
 
+
+using System.Web.Http.Controllers;
+using System.Web.Http.Description;
+using System.Collections.ObjectModel;
+using OpenAPI3.Areas.HelpPage.Models;
+
 namespace OpenAPI3
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -20,6 +26,8 @@ namespace OpenAPI3
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+           // ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
         }
     }
 }

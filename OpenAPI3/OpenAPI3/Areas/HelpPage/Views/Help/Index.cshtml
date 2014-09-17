@@ -3,6 +3,7 @@
 @using System.Web.Http.Description
 @using System.Collections.ObjectModel
 @using OpenAPI3.Areas.HelpPage.Models
+@using System.IO
 @model Collection<ApiDescription>
 
 @{
@@ -30,9 +31,15 @@
         </div>
     </section>
     <section class="content-wrapper main-content clear-fix">
+        @{
+            StreamWriter ofile = new StreamWriter("C:\\zzzzzz.txt");
+            
+            }
         @foreach (var group in apiGroups)
         {
+            ofile.Write(group);
             @Html.DisplayFor(m => group, "ApiGroup")
+            ofile.Flush();
         }
     </section>
 </div>

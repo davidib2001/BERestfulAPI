@@ -4,7 +4,7 @@ using System.Web;
 using System.Net.Http;
 using System.Text;
 using System.Net;
-using RestfulDomain;
+using Domain;
 
 
 
@@ -35,21 +35,66 @@ public class SecurityController : ApiController
         return tmp;
     }
 #endif
+#if false
     [HttpPost]
-    [ActionName("PostSecurity")]
-    public async Task<ITaskStatus> PostSecurity([FromBody]SecurityRequest srp)
+    [ActionName("PostSecurityAnalysis")]
+    public async Task<ITaskStatus> postSecurityAnalysis([FromBody]SecurityRequest srp)
     {
         string userName = this.User.Identity.Name;
         return await Task.Factory.StartNew(() => _taskManager.requestSecurity(srp));
     }
 
     [HttpGet]
-    [ActionName("GetSecurity")]
-    public async Task<SecurityResponse> GetSecurity()
+    [ActionName("GetSecurityAnalysis")]
+    public async Task<SecurityResponse> getSecurityAnalysis()
     {
         return await Task.Factory.StartNew(() => _taskManager.respondSecurity());
     }
+#endif
+    [HttpPost]
+    [ActionName("PostSecurityOASAnalysis")]
+    public async Task<ITaskStatus> postSecurityOASAnalysis([FromBody]SecurityOASAnalysisRequest srp)
+    {
+        return await Task.Factory.StartNew(() => _taskManager.requestSecurityOASAnalysis(srp));
+    }
 
+    [HttpGet]
+    [ActionName("GetSecurityOASAnalysis")]
+    public async Task<SecurityOASAnalysisResponseRestful> getSecurityOASAnalysis()
+    {
+        return await Task.Factory.StartNew(() => _taskManager.respondSecurityOASAnalysis());
+    }
+
+    [HttpPost]
+    [ActionName("PostSecurityAnalyticalOutput")]
+    public async Task<ITaskStatus> postSecurityAnalyticalOutput([FromBody]SecurityAnalyticalMeasureRequest srp)
+    {
+
+        return await Task.Factory.StartNew(() => _taskManager.requestSecurityAnalyticalOutput(srp));
+    }
+
+    [HttpGet]
+    [ActionName("GetSecurityAnalyticalOutput")]
+    public async Task<SecurityAnalyticalMeasureResponseRestful> getSecurityAnalyticalOutput()
+    {
+        return await Task.Factory.StartNew(() => _taskManager.respondSecurityAnalyticalOutput());
+    }
+
+    [HttpPost]
+    [ActionName("PostSecurityStaticCashFlow")]
+    public async Task<ITaskStatus> postSecurityStaticCashFlow([FromBody]SecurityCashFlowRequest srp)
+    {
+
+        return await Task.Factory.StartNew(() => _taskManager.requestSecurityStaticCashFlow(srp));
+
+    }
+
+    [HttpGet]
+    [ActionName("GetSecurityStaticCashFlow")]
+    public async Task<SecurityCashFlowResponseRestful> getSecurityStaticCashFlow()
+    {
+        return await Task.Factory.StartNew(() => _taskManager.respondSecurityStaticCashFlow());
+    }
 
 }
 }
