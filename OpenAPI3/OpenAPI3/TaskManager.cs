@@ -4,9 +4,11 @@ using System.Linq;
 using System;
 using System.Timers;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using Domain;
 using Bondedge;
+using System.Configuration;
 using InteractiveDataFIA.BondEdge;
 
 
@@ -19,15 +21,22 @@ public class TaskManager : ITaskManager
 
     //<todo> obviously from app/web .config
     private IResponse responseMsg;
-    private Object responseMsgLock = null;
+    private String responseMsgLock = "";
     private string msgBus = "";
     private string rabbitUser = "";
     private string rabbitPwd = "";
     private int waitForResponseHalfSeconds = 10;
 
+    public TaskManager()
+    {
+        msgBus = ConfigurationManager.AppSettings["rabbitHost"].ToString();
+        rabbitUser = ConfigurationManager.AppSettings["rabbitUser"].ToString();
+        rabbitPwd = ConfigurationManager.AppSettings["rabbitPass"].ToString();
+
+    }
 
     #region SECURITY ANALYTICAL
-    public ITaskStatus requestSecurityAnalyticalOutput(SecurityAnalyticalMeasureRequest srp)
+    public RestfulTask requestSecurityAnalyticalOutput(SecurityAnalyticalMeasureRequest srp)
     {
         responseMsg = null;
         enterpriseMessageBusInterface2 = new Bondedge.API(msgBus, rabbitUser, rabbitPwd);
@@ -42,14 +51,16 @@ public class TaskManager : ITaskManager
 
 
         //<test> pass back success right now
-        return new TaskStatus { Status = Enums.TASKSTATUSCODE.Complete, systemReturnCode = Enums.ERRORCODES.None, Message = "" };
+        return new RestfulTask() { status = restfulTaskStatus.success, msg = "" };
+
+
     }
 
 
 
-    public SecurityAnalyticalMeasureResponseRestful respondSecurityAnalyticalOutput()
+    public SecurityAnalyticalMeasureResponse respondSecurityAnalyticalOutput()
     {
-        SecurityAnalyticalMeasureResponseRestful r = null;
+        SecurityAnalyticalMeasureResponse r = null;
 
         //wait x sec for response
         int dcnt = waitForResponseHalfSeconds;
@@ -57,22 +68,18 @@ public class TaskManager : ITaskManager
         {
             lock (responseMsgLock)
             {
-                if (responseMsg != null && responseMsg is SecurityOASAnalysisResponse)
+                if (responseMsg != null && responseMsg is SecurityAnalyticalMeasureResponse)
                 {
-                    r = new SecurityAnalyticalMeasureResponseRestful(responseMsg as SecurityAnalyticalMeasureResponse);
-                    if (r.CalulateSecurities[0].Identifier == null)
+                    r = responseMsg as SecurityAnalyticalMeasureResponse;
+                    if(r.CalculateSecurities[0].Identifier == null)
                     {
-                        r.Status = Enums.TASKSTATUSCODE.CompleteWithError;
-                        r.systemReturnCode = Enums.ERRORCODES.Error;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.FAILURE);
                     }
 
                     //else we have something
                     else
                     {
-                        r.systemReturnCode = Enums.ERRORCODES.None;
-                        r.Status = Enums.TASKSTATUSCODE.Complete;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.SUCCESS);
                     }
                     return r;
                 }
@@ -83,39 +90,29 @@ public class TaskManager : ITaskManager
         }
 
         //else no response back
-        r = new SecurityAnalyticalMeasureResponseRestful();
-        r.Status = Enums.TASKSTATUSCODE.Canceled;
-        r.systemReturnCode = Enums.ERRORCODES.None;
-        r.Message = "";
+        r = new SecurityAnalyticalMeasureResponse();
+        r.SetReturnCode(Enums.ReturnCode.FAILURE);
         return r;
     }
 
     #endregion
 
     #region SECURITY OAS ANALYSIS
-    public ITaskStatus requestSecurityOASAnalysis(SecurityOASAnalysisRequest srp)
+    public RestfulTask requestSecurityOASAnalysis(SecurityOASAnalysisRequest srp)
     {
         responseMsg = null;
         enterpriseMessageBusInterface2 = new Bondedge.API(msgBus, rabbitUser, rabbitPwd);
         enterpriseMessageBusInterface2.RegisterClient(srp.GetUser(), Callback);
-
-
-        //tranlsate client message to message bus message
         srp.SetID(srp.ID != Guid.Empty ? srp.ID : Guid.NewGuid());
-
-        //place the message on the bus
         enterpriseMessageBusInterface2.SendRequest(srp);
-
-
-        //<test> pass back success right now
-        return new TaskStatus { Status = Enums.TASKSTATUSCODE.Complete,  systemReturnCode = Enums.ERRORCODES.None, Message = "" };
+        return new RestfulTask() { status = restfulTaskStatus.success, msg = "" };
     }
 
    
 
-    public SecurityOASAnalysisResponseRestful respondSecurityOASAnalysis()
+    public SecurityOASAnalysisResponse respondSecurityOASAnalysis()
     {
-        SecurityOASAnalysisResponseRestful r = null;
+        SecurityOASAnalysisResponse r = null;
 
         //wait x sec for response
         int dcnt = waitForResponseHalfSeconds;
@@ -125,62 +122,47 @@ public class TaskManager : ITaskManager
             {
                 if (responseMsg != null && responseMsg is SecurityOASAnalysisResponse)
                 {
-                    r = new SecurityOASAnalysisResponseRestful(responseMsg as SecurityOASAnalysisResponse);
+                    r = responseMsg as SecurityOASAnalysisResponse;
                     if (r.CalculateSecurityOASAnalysis == null)
                     {
-                        r.Status = Enums.TASKSTATUSCODE.CompleteWithError;
-                        r.systemReturnCode = Enums.ERRORCODES.Error;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.FAILURE);
                     }
 
                     //else we have something
                     else
                     {
-                        r.systemReturnCode = Enums.ERRORCODES.None;
-                        r.Status = Enums.TASKSTATUSCODE.Complete;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.SUCCESS);
                     }
                     return r;
                 }
-
             }
             Thread.Sleep(500);
             dcnt--;
         }
 
         //else no response back
-        r = new SecurityOASAnalysisResponseRestful();
-        r.Status = Enums.TASKSTATUSCODE.Canceled;
-        r.systemReturnCode = Enums.ERRORCODES.None;
-        r.Message = "";
+        r = new SecurityOASAnalysisResponse();
+        r.SetReturnCode(Enums.ReturnCode.FAILURE);
         return r;
     }
     #endregion
 
     #region SECURITY STATIC CASH FLOW
-    public ITaskStatus requestSecurityStaticCashFlow(SecurityCashFlowRequest srp)
+    public RestfulTask requestSecurityStaticCashFlow(SecurityCashFlowRequest srp)
     {
         responseMsg = null;
         enterpriseMessageBusInterface2 = new Bondedge.API(msgBus, rabbitUser, rabbitPwd);
         enterpriseMessageBusInterface2.RegisterClient(srp.GetUser(), Callback);
-
-
-        //tranlsate client message to message bus message
         srp.SetID(srp.ID != Guid.Empty ? srp.ID : Guid.NewGuid());
-
-        //place the message on the bus
         enterpriseMessageBusInterface2.SendRequest(srp);
-
-
-        //<test> pass back success right now
-        return new TaskStatus { Status = Enums.TASKSTATUSCODE.Complete, systemReturnCode = Enums.ERRORCODES.None, Message = "" };
+        return new RestfulTask { status = restfulTaskStatus.success };
     }
 
 
 
-    public SecurityCashFlowResponseRestful respondSecurityStaticCashFlow()
+    public SecurityCashFlowResponse respondSecurityStaticCashFlow()
     {
-        SecurityCashFlowResponseRestful r = null;
+        SecurityCashFlowResponse r = null;
 
         //wait x sec for response
         int dcnt = waitForResponseHalfSeconds;
@@ -190,20 +172,16 @@ public class TaskManager : ITaskManager
             {
                 if (responseMsg != null && responseMsg is SecurityCashFlowResponse)
                 {
-                    r = new SecurityCashFlowResponseRestful(responseMsg as SecurityCashFlowResponse);
+                    r = responseMsg as SecurityCashFlowResponse;
                     if (r.CashFlow == null || r.CashFlow.Identifier == null)
                     {
-                        r.Status = Enums.TASKSTATUSCODE.CompleteWithError;
-                        r.systemReturnCode = Enums.ERRORCODES.Error;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.FAILURE);
                     }
 
                     //else we have something
                     else
                     {
-                        r.systemReturnCode = Enums.ERRORCODES.None;
-                        r.Status = Enums.TASKSTATUSCODE.Complete;
-                        r.Message = "";
+                        r.SetReturnCode(Enums.ReturnCode.SUCCESS);
                     }
                     return r;
                 }
@@ -214,10 +192,8 @@ public class TaskManager : ITaskManager
         }
 
         //else no response back
-        r = new SecurityCashFlowResponseRestful();
-        r.Status = Enums.TASKSTATUSCODE.Canceled;
-        r.systemReturnCode = Enums.ERRORCODES.None;
-        r.Message = "";
+        r = new SecurityCashFlowResponse();
+        r.SetReturnCode(Enums.ReturnCode.SUCCESS);
         return r;
     }
 
@@ -228,7 +204,7 @@ public class TaskManager : ITaskManager
 
     private void Callback(IResponse response)
     {
-        lock (responseMsg)
+        lock (responseMsgLock)
         {
             responseMsg = response;
         }

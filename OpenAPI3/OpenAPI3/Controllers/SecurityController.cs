@@ -51,50 +51,48 @@ public class SecurityController : ApiController
         return await Task.Factory.StartNew(() => _taskManager.respondSecurity());
     }
 #endif
+
     [HttpPost]
     [ActionName("PostSecurityOASAnalysis")]
-    public async Task<ITaskStatus> postSecurityOASAnalysis([FromBody]SecurityOASAnalysisRequest srp)
+    public async Task<RestfulTask> postSecurityOASAnalysis([FromBody]SecurityOASAnalysisRequest srp)
     {
         return await Task.Factory.StartNew(() => _taskManager.requestSecurityOASAnalysis(srp));
     }
 
     [HttpGet]
     [ActionName("GetSecurityOASAnalysis")]
-    public async Task<SecurityOASAnalysisResponseRestful> getSecurityOASAnalysis()
+    public async Task<SecurityOASAnalysisResponse> getSecurityOASAnalysis()
     {
         return await Task.Factory.StartNew(() => _taskManager.respondSecurityOASAnalysis());
     }
 
     [HttpPost]
     [ActionName("PostSecurityAnalyticalOutput")]
-    public async Task<ITaskStatus> postSecurityAnalyticalOutput([FromBody]SecurityAnalyticalMeasureRequest srp)
+    public async Task<RestfulTask> postSecurityAnalyticalOutput([FromBody]SecurityAnalyticalMeasureRequest srp)
     {
-
         return await Task.Factory.StartNew(() => _taskManager.requestSecurityAnalyticalOutput(srp));
     }
 
     [HttpGet]
     [ActionName("GetSecurityAnalyticalOutput")]
-    public async Task<SecurityAnalyticalMeasureResponseRestful> getSecurityAnalyticalOutput()
+    public async Task<SecurityAnalyticalMeasureResponse> getSecurityAnalyticalOutput()
     {
         return await Task.Factory.StartNew(() => _taskManager.respondSecurityAnalyticalOutput());
     }
 
     [HttpPost]
     [ActionName("PostSecurityStaticCashFlow")]
-    public async Task<ITaskStatus> postSecurityStaticCashFlow([FromBody]SecurityCashFlowRequest srp)
+    public async Task<RestfulTask> postSecurityStaticCashFlow([FromBody]SecurityCashFlowRequest srp)
     {
 
         return await Task.Factory.StartNew(() => _taskManager.requestSecurityStaticCashFlow(srp));
-
     }
 
     [HttpGet]
     [ActionName("GetSecurityStaticCashFlow")]
-    public async Task<SecurityCashFlowResponseRestful> getSecurityStaticCashFlow()
+    public async Task<SecurityCashFlowResponse> getSecurityStaticCashFlow()
     {
         return await Task.Factory.StartNew(() => _taskManager.respondSecurityStaticCashFlow());
     }
-
 }
 }

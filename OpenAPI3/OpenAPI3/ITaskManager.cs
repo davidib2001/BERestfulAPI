@@ -10,12 +10,12 @@ namespace OpenAPI3
 {
     public interface ITaskManager
     {
-        ITaskStatus requestSecurityOASAnalysis(SecurityOASAnalysisRequest srp);
-        SecurityOASAnalysisResponseRestful respondSecurityOASAnalysis();
-        ITaskStatus requestSecurityAnalyticalOutput(SecurityAnalyticalMeasureRequest srp);
-        SecurityAnalyticalMeasureResponseRestful respondSecurityAnalyticalOutput();
-        ITaskStatus requestSecurityStaticCashFlow(SecurityCashFlowRequest srp);
-        SecurityCashFlowResponseRestful respondSecurityStaticCashFlow();
+        RestfulTask requestSecurityOASAnalysis(SecurityOASAnalysisRequest srp);
+        SecurityOASAnalysisResponse respondSecurityOASAnalysis();
+        RestfulTask requestSecurityAnalyticalOutput(SecurityAnalyticalMeasureRequest srp);
+        SecurityAnalyticalMeasureResponse respondSecurityAnalyticalOutput();
+        RestfulTask requestSecurityStaticCashFlow(SecurityCashFlowRequest srp);
+        SecurityCashFlowResponse respondSecurityStaticCashFlow();
 #if false
         Domain.ITaskStatus requestSecurityAnalysis(SecurityRequest srp);
         SecurityResponse respondSecurityAnalysis();
